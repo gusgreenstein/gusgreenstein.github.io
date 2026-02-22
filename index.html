@@ -46,6 +46,23 @@
       font-size: 0.95em;
     }
     .contact-links a:hover { color: #888; }
+    .header {
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
+      margin-bottom: 36px;
+    }
+    .header img {
+      width: 160px;
+      min-width: 160px;
+      border-radius: 4px;
+    }
+    .header-text h1 { margin-bottom: 6px; }
+    .header-text .subtitle { margin-bottom: 16px; }
+    @media (max-width: 540px) {
+      .header { flex-direction: column; }
+      .header img { width: 120px; }
+    }
   </style>
 </head>
 <body>
@@ -56,12 +73,23 @@
 </nav>
 
 <div class="container">
-  <h1>Gus Greenstein</h1>
-  <p class="subtitle">
-    Assistant Professor of Public Policy and Administration<br>
-    Leiden University Institute of Public Administration<br>
-    Faculty of Governance and Global Affairs
-  </p>
+  <div class="header">
+    <img src="profile_pic.jpg" alt="Gus Greenstein">
+    <div class="header-text">
+      <h1>Gus Greenstein</h1>
+      <p class="subtitle">
+        Assistant Professor of Public Policy and Administration<br>
+        Leiden University Institute of Public Administration<br>
+        Faculty of Governance and Global Affairs
+      </p>
+      <div class="contact-links">
+        <a href="mailto:g.h.greenstein@fgga.leidenuniv.nl">Email</a>
+        <a href="CV.pdf">CV</a>
+        <a href="https://twitter.com/gusgreenstein" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/in/gusgreenstein/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
 
   <p>I'm a political scientist specializing in environmental governance, public administration, and policy studies, working as an Assistant Professor of Public Policy and Administration at the Leiden University Institute of Public Administration (Faculty of Governance and Global Affairs). I received my PhD from Stanford University's Emmett Interdisciplinary Program in Environment and Resources.</p>
 
@@ -75,12 +103,6 @@
 
   <p>I hold an MPhil in Development Studies from Oxford and a BA in Environmental Studies from Amherst College.</p>
 
-  <div class="contact-links">
-    <a href="mailto:g.h.greenstein@fgga.leidenuniv.nl">Email</a>
-    <a href="CV.pdf">CV</a>
-    <a href="https://twitter.com/gusgreenstein" target="_blank">Twitter</a>
-    <a href="https://www.linkedin.com/in/gusgreenstein/" target="_blank">LinkedIn</a>
-  </div>
 </div>
 
 </body>
