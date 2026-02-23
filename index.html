@@ -45,14 +45,14 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
     }
-    nav a:hover, nav a.active { color: #888; }
+    nav a:hover { color: #888; }
     .container {
       max-width: 720px;
       margin: 0 auto;
       padding: 50px 24px 80px;
     }
     h1 { font-size: 2em; font-weight: 700; margin-bottom: 4px; }
-    .subtitle { color: #555; font-size: 1em; margin-bottom: 28px; white-space: nowrap; }
+    .subtitle { color: #555; font-size: 1em; margin-bottom: 28px; }
     p { margin-bottom: 14px; }
     .contact-links { margin-top: 28px; }
     .contact-links a {
@@ -77,15 +77,16 @@
     .header-text h1 { margin-bottom: 6px; }
     .header-text .subtitle { margin-bottom: 16px; }
     @media (max-width: 540px) {
-      .header { flex-direction: column; }
-      .header img { width: 120px; }
+      .header { flex-direction: column; align-items: center; text-align: center; }
+      .header img { width: 200px; min-width: unset; }
+      .contact-links a { margin: 0 8px; }
     }
   </style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="active">About</a>
+  <a href="index.html" class="active">Home</a>
   <a href="research.html">Research</a>
 </nav>
 
