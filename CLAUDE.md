@@ -4,12 +4,12 @@
 An academic personal website hosted on GitHub Pages, replacing a previous Weebly site.
 - **Live URL:** https://gusgreenstein.com (custom domain, DNS pointed from Weebly/Register.com)
 - **GitHub repo:** https://github.com/gusgreenstein/gusgreenstein.github.io
-- **Local files:** /Users/gusgreenstein/Desktop/gusgreenstein.github.io/
+- **Local files:** /Users/gusgreenstein/Library/CloudStorage/GoogleDrive-gusgreenstein@gmail.com/My Drive/0-Claude work/website/
 
 ## How to push changes to GitHub
 The repo uses SSH authentication. After editing any file, run:
 ```
-cd "/Users/gusgreenstein/Desktop/gusgreenstein.github.io"
+cd "/Users/gusgreenstein/Library/CloudStorage/GoogleDrive-gusgreenstein@gmail.com/My Drive/0-Claude work/website"
 git add .
 git commit -m "description of changes"
 git push origin main
