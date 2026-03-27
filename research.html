@@ -71,6 +71,26 @@
     }
     .pub a:hover { color: #888; }
     .pub em { font-style: italic; }
+    details.abstract { margin-top: 5px; }
+    details.abstract summary {
+      display: inline;
+      cursor: pointer;
+      font-size: 0.85em;
+      color: #aaa;
+      letter-spacing: 0.02em;
+      list-style: none;
+      user-select: none;
+    }
+    details.abstract summary::-webkit-details-marker { display: none; }
+    details.abstract summary::before { content: '▸ Abstract'; }
+    details[open].abstract summary::before { content: '▾ Abstract'; }
+    details.abstract summary:hover { color: #888; }
+    details.abstract .abstract-text {
+      margin-top: 8px;
+      font-size: 0.88em;
+      color: #555;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -86,24 +106,44 @@
 
   <div class="pub">
     <p><strong>Gus Greenstein</strong> and Mirko Heinzel. Online first. <a href="https://onlinelibrary.wiley.com/doi/10.1111/rego.70106?af=R" target="_blank">Bureaucratic Politics and Aid Allocation: Evidence from USAID</a>. <em>Regulation &amp; Governance.</em></p>
+    <details class="abstract">
+      <summary></summary>
+      <p class="abstract-text">What explains variation in aid allocation across countries? Existing studies focus on donor interests, recipient needs, and recipient merit, but do not account for the bureaucratic decision-making processes that determine budgets. We theorize that field-based development officials seek to maximize their country's budgets and that better-staffed country offices have greater capacity to do so. Using novel data on USAID staffing patterns between 1980 and 2020 and an instrumental variable strategy leveraging staff rotation patterns, we find that increasing the number of USAID staff in a country mission led to substantial increases in aid allocation. Interviews highlight two country office capacities that better staffing tended to increase: understanding of the USAID budget process, and ability to navigate time-consuming procedures related to funding commitment and disbursement.</p>
+    </details>
   </div>
 
   <div class="pub">
     <p><strong>Gus Greenstein</strong>. 2025. <a href="https://www.tandfonline.com/doi/full/10.1080/14719037.2025.2478621" target="_blank">Staff (Mis)allocation in Public Agencies: Evidence from Protected Area Management in Brazil</a>. <em>Public Management Review.</em></p>
     <p style="margin-left: 1.5em; margin-top: 4px; font-size: 0.88em;">– ISA Environmental Studies Section Graduate Student Paper Award, 2023</p>
+    <details class="abstract">
+      <summary></summary>
+      <p class="abstract-text">Misallocation of staff across subjurisdictions can have profound negative impacts on the performance of decentralized government agencies. Yet we lack an integrated view of the range of factors that can produce misallocation. I build a conceptual framework of the personnel (mis)allocation process through an historical study of Brazil's federal protected areas agency, which could have prevented 600–1,700 km² of deforestation over its first 10 years through more effective personnel allocation.</p>
+    </details>
   </div>
 
   <div class="pub">
     <p><strong>Gus Greenstein</strong>. 2024. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/padm.12954" target="_blank">How Personnel Allocation Affects Performance: Evidence from Brazil's Federal Protected Areas Agency</a>. <em>Public Administration</em> 102(3): 860–896.</p>
     <p style="margin-left: 1.5em; margin-top: 4px; font-size: 0.88em;">– <a href="https://blogs.lse.ac.uk/businessreview/2025/02/13/reallocating-staff-can-help-reduce-amazon-deforestation-in-brazil/" target="_blank"><em>LSE Business Review</em> op-ed</a></p>
+    <details class="abstract">
+      <summary></summary>
+      <p class="abstract-text">How does personnel allocation affect organizational performance? I explore sub-unit conditions under which staff are most valuable for agency performance through a mixed-methods study of Brazil's federal protected areas agency and its efforts to control deforestation. Drawing on 66 interviews and econometric analysis of 322 agency sub-units over 10 years, I find that three moderators shape the relationship between sub-unit staffing and performance: the size of a sub-unit's jurisdiction, a sub-unit's likelihood of near-term failure, and the strength of a sub-unit's ties with local stakeholders. Personnel reallocation strategies informed by these factors may have reduced deforestation by approximately 26% over the agency's first decade.</p>
+    </details>
   </div>
 
   <div class="pub">
     <p><strong>Gus Greenstein</strong>. 2022. <a href="greenstein-2022-world-bank-safeguards.pdf" target="_blank">The Influence of Alternative Development Finance on the World Bank's Safeguards Regime</a>. <em>Global Environmental Politics</em> 22(3): 171–93.</p>
+    <details class="abstract">
+      <summary></summary>
+      <p class="abstract-text">What shapes social-environmental regulations in the World Bank? I document a new source of influence: outside financing options for borrower countries. Through an in-depth study of the World Bank's Safeguards Review and Update, a four-year policy-making process that concluded in 2016, I show that as alternative sources of finance carrying less stringent safeguard requirements proliferated, borrowers gained negotiating power over Bank policy, enabling them to successfully push for more regulatory autonomy.</p>
+    </details>
   </div>
 
   <div class="pub">
     <p>Ryan Hledik and <strong>Gus Greenstein</strong>. 2016. <a href="greenstein-hledik-2016-demand-charges.pdf" target="_blank">The Distributional Impacts of Residential Demand Charges</a>. <em>The Electricity Journal</em> 29(6): 33–41.</p>
+    <details class="abstract">
+      <summary></summary>
+      <p class="abstract-text">We provide an initial assessment of the impact that residential demand charges could have on customer bills and on the economics of distributed energy storage. Using load data for a sample of utility customers in Vermont, we find that charges based on peak demand do not harm low-income customers on average, and in fact present these customers with significant opportunities to reduce their bills through peak-shaving.</p>
+    </details>
   </div>
 
   <h2>Book Chapters</h2>
@@ -116,6 +156,10 @@
 
   <div class="pub">
     <p><strong>Gus Greenstein</strong>. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5183425" target="_blank">Bureaucratic Autonomy in Environmental Governance</a>.</p>
+    <details class="abstract">
+      <summary></summary>
+      <p class="abstract-text">Why are some environmental agencies more autonomous than others? Bureaucratic autonomy can be critical for insulating long-term reform efforts from short political cycles and ensuring that highly technical matters are led by specialists. I analyze 39 national environmental agencies spanning six continents and find that autonomy is positively related to country income levels and overall quality of governance, but is unrelated to political system type. The analysis highlights countries where environmental agency autonomy is far above or below what is typical for countries with similar governance quality.</p>
+    </details>
   </div>
 
   <h2>In Progress</h2>
